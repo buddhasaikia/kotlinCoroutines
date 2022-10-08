@@ -85,10 +85,10 @@ Similar to CoroutineScope, every coroutine has its own CoroutineContext. Unlike 
 **CoroutineContext has two major component-**
 		
 1. **Dispatcher**- It decides on which thread the coroutine will execute
-			- Default
-			- Unconfined
-			- Main
-			- IO
-2. **Job**- is used to control the coroutine
+   * Default
+   * Unconfined
+   * Main
+   * IO
+2. **Job**- is used to control a coroutine
 3. CoroutineName
 
