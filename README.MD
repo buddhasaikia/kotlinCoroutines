@@ -60,6 +60,8 @@ Use `withContext(NonCancellable){}` to execute suspend function in finally block
 
 `withTimeoutOrNull`
 
+These are also coroutine builders just like launch and async builders.
+
 ## Composing suspending function
 
 **Sequential execution-**
