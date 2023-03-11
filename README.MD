@@ -20,7 +20,7 @@
 Coroutine builders are used for creating coroutine.
 
 **Important coroutine builders-**
-1. runBlocking
+1. runBlocking - generally used to write test cases to test the suspending functions.
 2. launch
 2. async
 
@@ -30,7 +30,7 @@ e.g. `GlobalScope.launch{}, GlobalScope.async{}, runBlocking{}`
 **GlobalScope.launch{} vs launch{}-**
 
 `GlobalScope.launch{}` is a top level coroutine that can survive the entire lifecycle of the application. **GlobalScope** is a singleton class.
-`launch{}` this creates coroutine at local scope, get destroyed when current scope get destroyed.
+`launch{}` creates coroutine at local scope, get destroyed when current scope get destroyed.
 `launch{}` (also `async{}`) coroutine inherits the properties of the immediate parent coroutine i.e. if you run it inside `runBlocking{}` which wraps the main method, it will execute in main thread.
 
 **launch vs async-**
